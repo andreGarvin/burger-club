@@ -1,157 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="images/favicon.ico">
 
-    <title>Burger Club</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="images/favicon.ico">
 
-  </head>
-  <body>
-    
-    <!-- this is model section for the newletter popup-->
-    <div class="modal fade" id='myModal' tabindex="-1" role="dialog" aria-labelledby="myModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <title>Burger Club</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- this is model section for the newletter popup-->
+  <div class="modal fade" id='myModal' tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
-                    
-                    <h4 class="modal-title">Burger Club:</h4>
-                    <div class="modal-body">
-                        <p id='text' class="lead"></p>
-                    </div>
-                </div>
-            </div>
+
+          <h4 class="modal-title">Burger Club:</h4>
+          <div class="modal-body">
+            <p id='text' class="lead"></p>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <nav class="navbar  navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  </div>
+
+  <nav class="navbar  navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="index.html">Burger Club</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="pages/location.html">Location</a></li>
-            <li><a href="images/menu.png">Menu</a></li>         
-            <li><a href="https://ordering.chownow.com/order/7631/locations?add_cn_ordering_class=true">Order</a></li>   
-          </ul>
-        </div><!--/.nav-collapse -->
+        <a class="navbar-brand" href="index.html">Burger Club</a>
       </div>
-    </nav>
-    
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class='tab' href="pages/location.html">Location</a>
+          </li>
+          <li>
+            <a class='tab' href="images/menu.png">Menu</a>
+          </li>
+          <li>
+            <a class='tab' href="https://ordering.chownow.com/order/7631/locations?add_cn_ordering_class=true">Order</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+
+  <div class="container-fuild">
+
+    <!--Main component for a primary marketing message or call to action -->
     <div class="container-fuild">
-        <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <div class="container">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <!--<h1>Burgers for the Whole Family</h1>-->
-            <!--<p classs> Our love and passion for comfort, food,and hospitality drove us to find Burger Club. We have spared no expense in sourcing our ingredients for the local specialties bought from independent purveyors here in Astoria, to the local fresh rolls baked for us every day, to the ultra deluxe custom blend created specifically for us by celebrated butcher Pat lafrieda.</p>-->
-            <!--<p>-->
-            <!--  <a class="btn btn-lg btn-primary" href="images/menu.png" role="button">Read Our Menu</a>-->
-            <!--</p>-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!--Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!--Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="http://www.burger-club.com/wp-content/uploads/2011/11/IMG_27411.jpg" style=" width:100%; height:100%;
+          " />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Burgers for the Whole Family</h3>
+              <p>Our love and passion for comfort,food,and hospitality drove us to find Burger Club. We have spared no expense in sourcing our ingredients for the local specialties bought from independent purveyors here in Astoria, to the local fresh rolls
+                baked for us every day, to the ultra deluxe custom blend created specifically for us by celebrated butcher Pat lafrieda.</p>
+            </div>
           </div>
+
+
+          <div class="item">
+            <img src="http://www.hotel-r.net/im/hotel/ua/burger-club-12.jpg" style="width:100%; height: 50%;" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Burgers for the Whole Family</h3>
+              <p>Our love and passion for comfort,food,and hospitality drove us to find Burger Club. We have spared no expense in sourcing our ingredients for the local specialties bought from independent purveyors here in Astoria, to the local fresh rolls
+                baked for us every day, to the ultra deluxe custom blend created specifically for us by celebrated butcher Pat lafrieda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
 
     <div class="footer">
       <div class="container">
-          <div class="col-sm-3 col-xs-12 col-md-4">
-            <p class="lead"> Visit Us </p>
-            <p>Address: 32-02 30th Ave, Astoria, NY 11102 </p>
-            <p>Hours:11:30AM–11:30PM</p>
-            <p>Phone: (718) 777-7788</p>
-          </div>
-          
-          <div id='contact' class="col-sm-3 col-xs-12">
-            <h2>Contact Us</h2>
-            
-            <input id='name' class="form-control" type="text" placeholder="Your Name"/>
-            <input id='email' class="form-control" type="email" placeholder="E-mail"/>
-            
-            <button class='btn btn-default' type="button" data-toggle="modal" data-target="#myModal">Sign up</button>
-          </div>
-          
-          <section id="social">
-            <div class="col-sm-6">
-              <ul>
-    			      <li>
-    			        <a class='social_media' href="">
-    			          
-    			            <a href="https://www.facebook.com/BurgerClubAstoria" class="social_media">
-    			           <img src="images/facebook.svg" alt="Facebook" />
-    			        </a>
-    			      </li>
-					      <li class='social_media'>
-					        <a href="https://twitter.com/@BurgerClub30Ave" class="social_media">
-					          <img src="images/twitter.svg" alt="Twitter" />
-					        </a>
-			          </li>
-			          <li class='social_media'>
-			            
-			            <a href="https://www.instagram.com/burgerclubnyc/
+         name='name'<div class="col-sm-3 col-xs-12 col-md-4">
+          <h2 style='color: #fff; border-bottom: #fff;'> Visit Us </h2>
+          <p>Address: 32-02 30th Ave, Astoria, NY 11102 </p>
+          <p>Hours:11:30AM–11:30PM</p>
+          <p>Phone: (718) 777-7788</p>
+        </div>
+
+        <div id='contact' class="col-sm-6 col-xs-6 col-md-6 pull-right">
+          <h2>Contact Us</h2>
+
+          <form method="POST" action="https://formspree.io/andregarvin718@gmail.com">
+            <input id='name' class="form-control" type="text" placeholder="Your Name" />
+            <input id='email' class="form-control" type="email" name='_replyto' name='name' placeholder="E-mail" />
+
+            <button type="submit" value="Send" id='sign_up' class='btn btn-default pull-right' type="button">Sign up</button>
+          </form>
+        </div>
+
+        <section id="social">
+          <div class="col-sm-6">
+            <ul>
+              <li>
+                <a class='social_media' href="">
+
+                  <a href="https://www.facebook.com/BurgerClubAstoria" class="social_media">
+                    <img src="images/facebook.svg" alt="Facebook" />
+                  </a>
+              </li>
+              <li class='social_media'>
+                <a href="https://twitter.com/@BurgerClub30Ave" class="social_media">
+                  <img src="images/twitter.svg" alt="Twitter" />
+                </a>
+              </li>
+              <li class='social_media'>
+
+                <a href="https://www.instagram.com/burgerclubnyc/
 " class="social_media">
-			            
-			            <img src="images/instagram.svg" alt="Instagram" />
-		            </li>
-		            <li class='social_media'>
-		              
-		               <a href="https://www.linkedin.com/
+
+                  <img src="images/instagram.svg" alt="Instagram" />
+              </li>
+              <li class='social_media'>
+
+                <a href="https://www.linkedin.com/
 " class="social_media">
-		              
-		              <img src="images/linkedin.svg" alt="LinkedIn" />
-		            </li>
-		          </ul> 
-            </div>
-          </section>
+
+                  <img src="images/linkedin.svg" alt="LinkedIn" />
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
     </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
-    <script type="text/javascript" src="script.js"></script>
-  </body>
-
-
-
-<!-- <div class="carousel" data-ride="carousel">
-  <!--<div class="carousel-inner" role="listbox">-->
-  <!--  <div class="carousel-item active">-->
-  <!--    <img class="d-block img-fluid" src="https://b.zmtcdn.com/data/pictures/8/16787248/5f006d94b3919e1642324d4220bfe0cd.jpg" alt="First slide">-->
-  <!--  </div>-->
-  <!--  <div class="carousel-item">-->
-  <!--    <img class="d-block img-fluid" src="http://www.hotel-r.net/im/hotel/ua/burger-club-12.jpg" alt="Second slide">-->
-  <!--  </div>-->
-  <!--  <div class="carousel-item">-->
-  <!--    <img class="d-block img-fluid" src="https://b.zmtcdn.com/data/pictures/8/16787248/0ae781ebd3b2435c980daf65e9624ca4.jpg" alt="">-->
-  <!--  </div>-->
   </div>
+  
+<a class="twitter-timeline"
+   a href="https://twitter.com/@BurgerClub30Ave">
+Tweets by @BurgerClub30Ave
+</a>
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+
+
+</script>
 
 </html>
-

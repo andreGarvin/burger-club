@@ -35,17 +35,24 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="location.html">Location</a></li>
-            <li><a href="../images/menu.png">Menu</a></li>         
+            <li>
+              <a class='tab' href="location.html">Location</a>
+            </li>
+            <li>
+              <a class='tab' href="../images/menu.png">Menu</a>
+            </li>         
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+    
     <div class="col-sm-3" id="location-list">
-      <p>Address: 32-02 30th Ave, Astoria, NY 11102 </p>
-      <p>Hours:11:30AM–11:30PM</p>
-      <p>Phone: (718) 777-7788</p>
+      <p style='color: grey' class='lead'>Address: 32-02 30th Ave, Astoria, NY 11102 </p>
+      <p style='color: grey' class='lead'>Hours:11:30AM–11:30PM</p>
+      <p style='color: grey' class='lead'>Phone: (718) 777-7788</p>
       <hr>
+      <p style='color: grey' class='lead'>ScriptEd</p>
+      <p style='color: grey' class='lead'>Address: 85 Broad St, 17th Floor New York, NY 10004</p>
     </div>
     
     <!--<div class="col-sm-9">-->
@@ -57,15 +64,30 @@
     <script>
       var map;
       function initMap() {
-        var uluru = {lat: 40.7661763, lng: -73.9206756};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
+        var pins = [
+          { lat: 40.7661763, lng: -73.9206756 },
+          { lat: 40.7039915, lng: -74.0132804 }
+        ]
+        
+        for ( var i in pins ) {
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 13,
+              center: pins[i]
+            });
+            var marker = new google.maps.Marker({
+              position: pins[i],
+              map: map
+            });
+        }
+        
+        // var map = new google.maps.Map(document.getElementById('map'), {
+        //   zoom: 13,
+        //   center: pins[0]
+        // });
+        // var marker = new google.maps.Marker({
+        //   position: pins[0],
+        //   map: map
+        // });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJWN3KKLlUl6-LcBZVVfGKMamX_KwjbKA&callback=initMap"
