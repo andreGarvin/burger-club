@@ -1,116 +1,142 @@
 /*body {*/
+
+
 /*  padding-top: 50px;*/
+
+
 /*  	background-color: #D62F01;*/
+
+
 /*    border-color: #D62F01;*/
+
+
 /*}*/
 
 .navbar {
-	background-color: #D62F01;
+    background-color: #D62F01;
     border-color: #D62F01;
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
     color: #FFFFFF;
 }
-
 
 .navbar-brand {
+    font-size: 60px;
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.modal-body p {
+    color: black;
+}
+
+.jumbotron {
+    padding: 100px;
+    height: 500px;
+    background-image: url(http://ucdintegrativemedicine.com/wp-content/uploads/Aug-21_BurgerDay_Header8CUTFB2_35406006.png)
+}
+
+.jumbotron h1 {
     color: #FFFFFF;
 }
 
 .jumbotron {
-	padding: 100px;
-	height: 500px;
-	background-image: url(http://ucdintegrativemedicine.com/wp-content/uploads/Aug-21_BurgerDay_Header8CUTFB2_35406006.png)
-}
-
-.jumbotron h1{
-	color: #FFFFFF;
-}
-.jumbotron {
-	color: #FFFFFF;
-	margin: 0;
+    color: #FFFFFF;
+    margin: 0;
 }
 
 .jumbotron .btn {
-	background-color:#D62F01;
-	border-color: #D62F01;
+    background-color: #D62F01;
+    border-color: #D62F01;
 }
 
-.section{
-	height: 300px;
+.section {
+    height: 300px;
 }
 
 .section h1 {
-	color: #15C2D2;
+    color: #15C2D2;
 }
-
 
 .donate h3 {
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
-
 
 .grey-light {
     background-color: #f2f2f2;
 }
 
 .orange {
-	background-color: #EF5330;
+    background-color: #EF5330;
 }
 
-
 .footer {
-
     background-color: #D62F01;
-   border-color: #D62F01;
-   padding-top: 20px;
-   padding-bottom: 20px;
+    border-color: #D62F01;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+#contact h1 {
+    color: #fff;
 }
 
 .sponsor {
-	max-width: 100px;
+    max-width: 100px;
     opacity: 0.35;
     display: inline-block;
     margin-right: 1em;
     margin-bottom: 0.5em;
 }
+
 img {
     max-width: 100%;
 }
 
-#social ul{
-	clear:left;
-    list-style:none;
-    margin:0;
-    padding:0;
-    position:relative;
-    left:50%;
-    text-align:center;
+#social ul {
+    clear: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    text-align: center;
 }
 
 #social li {
-	display:block;
-    float:left;
-    list-style:none;
-    margin:0;
-    padding:0;
-    position:relative;
-    right:50%;
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 50%;
 }
 
-#social ul li img
-{
+#social ul li img {
     margin: 10px;
     height: 25px;
 }
 
-#location-list{
+#location-list {
     margin-top: 75px;
     background-color: #FFFFFF;
 }
 
- p {
+p {
+    color: white;
+}
+
+
+
+
+ 
     
- }
+img {
+    text-align:center;
+}
