@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -64,30 +65,24 @@
     <script>
       var map;
       function initMap() {
+        
         var pins = [
           { lat: 40.7661763, lng: -73.9206756 },
           { lat: 40.7039915, lng: -74.0132804 }
-        ]
+        ],
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: new google.maps.LatLng(pins[0].lat, pins[0].lng),
+            zoom: 12
+        }), 
+        infoWindow = new google.maps.InfoWindow()
         
+        // infoWindow.setContent('<img src="http://eatbychloe.com/wp-content/uploads/2016/05/burger-active.png" />')
         for ( var i in pins ) {
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 13,
-              center: pins[i]
-            });
-            var marker = new google.maps.Marker({
-              position: pins[i],
-              map: map
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(pins[i].lat, pins[i].lng),
+                map: map
             });
         }
-        
-        // var map = new google.maps.Map(document.getElementById('map'), {
-        //   zoom: 13,
-        //   center: pins[0]
-        // });
-        // var marker = new google.maps.Marker({
-        //   position: pins[0],
-        //   map: map
-        // });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJWN3KKLlUl6-LcBZVVfGKMamX_KwjbKA&callback=initMap"

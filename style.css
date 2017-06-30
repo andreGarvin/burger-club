@@ -22,6 +22,10 @@
     color: #FFFFFF;
 }
 
+.navbar-nav li a:hover {
+    color: #D62F01;
+}
+
 .navbar-brand {
     font-size: 60px;
     color: #FFFFFF;
@@ -80,6 +84,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+/*.social_media img:hover {*/
+/*    height: 120px;*/
+/*    width: 120px;*/
+/*}*/
 
 #contact h2 {
     color: #fff;
